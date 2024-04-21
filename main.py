@@ -55,7 +55,7 @@ def addCustomVHost():
 
     messagebox.showinfo(
         title="Success",
-        message="You can now start developing."
+        message="Restart Apache first, then you can start developing."
     )
 
 
