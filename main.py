@@ -87,7 +87,7 @@ def handle():
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("conf.ident")
-    root.geometry()
+    root.geometry("350x150")
     root.resizable(False, False)
     root.eval('tk::PlaceWindow . center')
 
@@ -98,12 +98,12 @@ if __name__ == "__main__":
 
     tk.Label(gridFrame, text="Domain").grid(row=0, column=0)
 
-    urlEntry = tk.Entry(gridFrame, textvariable=domainVal, width=40)
+    urlEntry = tk.Entry(gridFrame, textvariable=domainVal, width=45)
     urlEntry.grid(row=0, column=1, columnspan=3)
 
     dirRootVal = tk.StringVar()
 
-    dirRootEntry = tk.Entry(gridFrame, textvariable=dirRootVal, width=40)
+    dirRootEntry = tk.Entry(gridFrame, textvariable=dirRootVal, width=45)
     dirRootEntry.grid(row=1, column=1, columnspan=3)
     dirRootEntry.config(state=tk.DISABLED)
 
